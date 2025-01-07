@@ -7,6 +7,7 @@ import Login from './src/pages/Register';
 import OTPVerification from './src/pages/RegisterS2';
 import SuccessScreen from './src/pages/RegisterS3';
 import EditProfileScreen from './src/pages/Profile';
+import OTPInput from './src/pages/OTPInput';
 
 const Stack = createStackNavigator();
 
@@ -31,7 +32,7 @@ export default function App() {
             backgroundColor: 'green', 
           },
           }} />
-        <Stack.Screen name="VerificationScreen" component={OTPVerification} 
+        <Stack.Screen name="VerificationScreen" component={OTPInput} 
           options={{
             headerTitle: "Back to login", headerShown: true,
             headerStyle: {
