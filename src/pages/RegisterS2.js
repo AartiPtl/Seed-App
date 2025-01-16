@@ -43,7 +43,7 @@ const OTPVerification = ({ navigation }) => {
             <TouchableOpacity onPress={ResendOtp}>
                 <Text style={styles.ResendText}>
                     Resend OTP
-                </Text>
+                </Text> 
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.button} onPress={handleVerify}>

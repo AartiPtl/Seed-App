@@ -19,14 +19,14 @@ const OTPVerificationScreen = ({ navigation }) => {
             refs[index + 1].focus();
 
         }
-        if(index==3){
-            const otpString=newOtp.join('');
+        if (index == 3) {
+            const otpString = newOtp.join('');
 
-handleVerify(otpString);
+            handleVerify(otpString);
         }
     };
-    const handleVerify = (otpString) => { 
-        console.log('otp.length',otp)
+    const handleVerify = (otpString) => {
+        console.log('otp.length', otp)
         if (otpString.length === 4) {
             // Alert.alert('Success', `OTP Verified`);
 
@@ -67,7 +67,7 @@ handleVerify(otpString);
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.button} onPress={()=>handleVerify(otp.join(''))}>
+            <TouchableOpacity style={styles.button} onPress={() => handleVerify(otp.join(''))}>
                 <Text style={styles.buttonText}> Verify Now</Text>
             </TouchableOpacity>
         </View>

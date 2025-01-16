@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, Button, ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, ImageBackground, TouchableOpacity } from 'react-native';
 
 const WelcomeScreen = ({navigation}) => {
 
@@ -60,13 +60,13 @@ const styles = StyleSheet.create({
         fontSize: 40,
         color: 'black',
         fontWeight: 'bold'
-    },
+    
 
-    buttonStyle: {
-        paddingHorizontal: 20,
-        paddingVertical: 10,
-        backgroundColor: 'green',
-        margin: 20
+    //buttonStyle: {
+      //  paddingHorizontal: 20,
+        //paddingVertical: 10,
+        //backgroundColor: 'green',
+        //margin: 20
     }
 
 });
